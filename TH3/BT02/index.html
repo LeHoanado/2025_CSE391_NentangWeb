@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Đăng Ký</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <style>
+    .error { color: red; font-size: 0.9em; }
+    .success-message { display: none; color: green; margin-top: 20px; }
+  </style>
+</head>
+<body>
+
+  <h2>Form Đăng Ký</h2>
+  <form id="registerForm">
+    <label>Họ tên:</label><br>
+    <input type="text" id="fullname"><br>
+    <span class="error" id="error-name"></span><br>
+
+    <label>Email:</label><br>
+    <input type="text" id="email"><br>
+    <span class="error" id="error-email"></span><br>
+
+    <label>Mật khẩu:</label><br>
+    <input type="password" id="password"><br>
+    <span class="error" id="error-password"></span><br><br>
+
+    <button type="submit">Đăng ký</button>
+  </form>
+
+  <div class="success-message" id="successDiv">
+    <h3>🎉 Đăng ký thành công!</h3>
+    <button id="detailBtn">Xem chi tiết</button>
+    <div id="details" style="display:none;"></div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
